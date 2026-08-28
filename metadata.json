@@ -1,0 +1,6 @@
+{
+  "name": "Faktur Pro - Generator & Manajemen Penjualan",
+  "description": "Generator faktur/invoice interaktif mirip invoice-generator.com dengan manajemen multi-faktur, riwayat database tersimpan, analitik penjualan, katalog produk, buku kontak pelanggan, dan kasir POS cepat standar A4 siap cetak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

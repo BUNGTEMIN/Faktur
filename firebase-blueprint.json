@@ -1,0 +1,60 @@
+{
+  "entities": {
+    "UserProfile": {
+      "path": "users/{userId}",
+      "fields": {
+        "uid": { "type": "string", "description": "Google Auth UID" },
+        "email": { "type": "string", "description": "User email" },
+        "displayName": { "type": "string", "description": "User name" },
+        "photoURL": { "type": "string", "description": "User avatar" },
+        "createdAt": { "type": "string", "description": "Timestamp ISO" }
+      }
+    },
+    "Invoice": {
+      "path": "users/{userId}/invoices/{invoiceId}",
+      "fields": {
+        "id": { "type": "string" },
+        "invoiceNumber": { "type": "string" },
+        "issueDate": { "type": "string" },
+        "dueDate": { "type": "string" },
+        "client": { "type": "map" },
+        "biller": { "type": "map" },
+        "items": { "type": "array" },
+        "paymentStatus": { "type": "string" },
+        "subtotal": { "type": "number" },
+        "total": { "type": "number" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "Product": {
+      "path": "users/{userId}/products/{productId}",
+      "fields": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "sku": { "type": "string" },
+        "unit": { "type": "string" },
+        "price": { "type": "number" },
+        "description": { "type": "string" }
+      }
+    },
+    "Client": {
+      "path": "users/{userId}/clients/{clientId}",
+      "fields": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "company": { "type": "string" },
+        "address": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" }
+      }
+    },
+    "UserSettings": {
+      "path": "users/{userId}/settings/config",
+      "fields": {
+        "billerProfile": { "type": "map" },
+        "numberingConfig": { "type": "map" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  }
+}
